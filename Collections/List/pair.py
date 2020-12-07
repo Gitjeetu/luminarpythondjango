@@ -1,0 +1,13 @@
+lst=[1,2,3,4,6,8,9,]
+l=0
+u=len(lst)-1
+el=6
+while(l<u):
+    tot=lst[l]+lst[u]
+    if(el<tot):
+        u=u-1
+    elif(el>tot):
+        l=l+1
+    elif(el==tot):
+        print(lst[l],lst[u],"Pairs")
+        break
