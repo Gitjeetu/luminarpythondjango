@@ -3,7 +3,7 @@ def print_student(**kwargs):
     if rol in students:
         print(students[rol]["name"])
         if "property" in kwargs:
-            prop=kargs["property"]
+            prop=kwargs["property"]
             if prop in students[rol]:
                 print(students[rol][prop])
         else:
